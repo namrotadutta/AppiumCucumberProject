@@ -1,0 +1,15 @@
+[INFO ] 2022-03-17 12:24:16.829 [main] ContentScreen - user click in the content in the homepage
+[INFO ] 2022-03-17 12:24:18.325 [main] ContentScreen - user want to check assets
+[INFO ] 2022-03-17 12:24:19.488 [main] ContentScreen - user click read assets to read asset
+[INFO ] 2022-03-17 12:24:29.541 [main] DisplayOptions - user click in the app of the homepage
+[INFO ] 2022-03-17 12:24:30.799 [main] DisplayOptions - user click in the action bar
+[INFO ] 2022-03-17 12:24:32.296 [main] DisplayOptions - user click in the display option
+[INFO ] 2022-03-17 12:24:32.789 [main] DisplayOptions - user is in the show title page
+[INFO ] 2022-03-17 12:24:41.599 [main] HideShowButton - user is in homepage and click in the Animation
+[INFO ] 2022-03-17 12:24:41.978 [main] HideShowButton - user click in the hide-show button
+[INFO ] 2022-03-17 12:24:43.243 [main] HideShowButton - user click in the hide checkbox
+[INFO ] 2022-03-17 12:24:52.871 [main] HideShowButton - user is in homepage and click in the Animation
+[INFO ] 2022-03-17 12:24:54.406 [main] HideShowButton - user click in the hide-show button
+[INFO ] 2022-03-17 12:25:03.728 [main] TextToSpeechScreen - user is in homepage and click in the app
+[INFO ] 2022-03-17 12:25:03.928 [main] TextToSpeechScreen - user click in the text to speech 
+[INFO ] 2022-03-17 12:25:04.976 [main] TextToSpeechScreen - user click again to hear speech again
