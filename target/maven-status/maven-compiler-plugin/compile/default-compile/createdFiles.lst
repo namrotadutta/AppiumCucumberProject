@@ -1,0 +1,9 @@
+com\Utils\commonUtilities.class
+com\Base\CommonBase.class
+com\Screens\TextToSpeechScreen.class
+com\Utils\AppiumServer.class
+com\Screens\DisplayOptions.class
+com\Screens\HideShowButton.class
+com\Utils\propertiesFile.class
+com\Screens\ContentScreen.class
+com\Base\BaseClass.class
