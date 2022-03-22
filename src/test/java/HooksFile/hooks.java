@@ -1,6 +1,9 @@
 package HooksFile;
 
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import com.Base.CommonBase;
 import com.Screens.HideShowButton;
 import com.Utils.commonUtilities;
@@ -38,6 +41,14 @@ public class hooks extends CommonBase {
 	@After
 	public void after(Scenario scenario) {
 		commonUtilities.stopAppium();
+		if(scenario.isFailed()) {
+			//take a screenshot
+			final byte[] takescreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+			//embed it in the report
+			 scenario.embed(takescreenshot, "image/png"); 
+			 System.out.print("------------------------its working--------------------------");
+		}
+		driver.quit();
 	}
 	
 	

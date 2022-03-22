@@ -14,6 +14,8 @@ import junit.framework.Assert;
 
 public class HideShowButton extends BaseClass{
 	
+	//define logger information
+	
 	static Logger logger= LogManager.getLogger(HideShowButton.class);	
 	
 	public HideShowButton(AppiumDriver<MobileElement> driver) {
@@ -21,6 +23,8 @@ public class HideShowButton extends BaseClass{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
      
+	//locators and screens for hide show button
+	
 	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView")
 	 public MobileElement HomePageTitle;
 	
@@ -37,7 +41,7 @@ public class HideShowButton extends BaseClass{
 	public void Animation() {               
 		clickAnimation.click();
 		logger.info("user is in homepage and click in the Animation");
-		takeScreenShot();
+		
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc=\"Hide-Show Animations\"]")
@@ -54,7 +58,7 @@ public class HideShowButton extends BaseClass{
 	public void HideCheckBox() {
 		checkHide.click();
 		logger.info("user click in the hide checkbox");
-		takeScreenShot();
+		
 	}
 	
 	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView")

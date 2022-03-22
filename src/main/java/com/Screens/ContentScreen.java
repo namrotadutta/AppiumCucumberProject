@@ -15,6 +15,7 @@ import junit.framework.Assert;
 
 public class ContentScreen extends BaseClass{
 	
+	//define logger information
 	static Logger logger= LogManager.getLogger(ContentScreen.class);
 	
 	public ContentScreen(AppiumDriver<MobileElement> driver) {
@@ -22,13 +23,15 @@ public class ContentScreen extends BaseClass{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	//locators and screen page for content button
+	
 	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc=\"Content\"]")
 	 public MobileElement clickContent;
 	
 	public void Content() {               
 		clickContent.click(); 
 		logger.info("user click in the content in the homepage");
-		takeScreenShot();
+		
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc=\"Assets\"]")
@@ -45,7 +48,7 @@ public class ContentScreen extends BaseClass{
 	public void ReadAssets() {               
 		clickReadAssets.click(); 
 		logger.info("user click read assets to read asset");
-		takeScreenShot();
+		
 	}
 
 	
@@ -56,7 +59,7 @@ public class ContentScreen extends BaseClass{
 	public void ReadAssetTitle() {               
 		String title = ReadAssetPageTitle.getText();
 		Assert.assertEquals(title, "Content/Assets/Read Asset"); 
-		takeScreenShot();
+		
 		
 		
 		

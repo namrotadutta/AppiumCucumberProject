@@ -25,17 +25,19 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @Test
 public class Runner extends AbstractTestNGCucumberTests {
 	
+	//executed before all the other test methods.
 	@BeforeSuite
 	public void setup() {
 		AppiumServer.startAppium();
 	}
 	
+	//used to stop the Appium drivers.
 	@AfterSuite
 	public void tearDown() {
 		AppiumServer.closeAppium();
 	}
 
-	
+	//executed after all the test methods of a current class have been invoked.
 	@AfterClass
 	public static void SETUP()
 	{

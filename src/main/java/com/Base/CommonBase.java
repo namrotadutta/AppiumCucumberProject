@@ -8,6 +8,6 @@ public class CommonBase {
 	
 	public static AppiumDriver<MobileElement>driver;
 	
-	public static String screenshotdir = System.getProperty("user.dir") + "/test-output/screenshots"; 
+	//public static String screenshotdir = System.getProperty("user.dir") + "/test-output/screenshots"; 
 	
 }

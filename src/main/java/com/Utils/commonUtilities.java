@@ -15,7 +15,7 @@ public class commonUtilities {
 	public static URL ServerURL;
 	
 	
-	
+	//define desired capabilities for the API Demos app
 	
 	public void setCapabilities() {
 		

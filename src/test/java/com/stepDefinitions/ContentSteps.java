@@ -11,7 +11,7 @@ public class ContentSteps extends CommonBase{
 	
 	ContentScreen con = new ContentScreen(driver);
 	
-	
+
 
 @When("^user click in the content$")
 public void user_click_in_the_content() {

@@ -14,6 +14,8 @@ import junit.framework.Assert;
 
 public class TextToSpeechScreen extends BaseClass{
 	
+	//define logger information
+	
 	static Logger logger= LogManager.getLogger(TextToSpeechScreen.class);
 	
 	public TextToSpeechScreen(AppiumDriver<MobileElement> driver) {
@@ -21,6 +23,7 @@ public class TextToSpeechScreen extends BaseClass{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	//locators and screen for text to speech button
 	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc=\"App\"]")
 	 public MobileElement clickApp;
 	
@@ -43,7 +46,7 @@ public class TextToSpeechScreen extends BaseClass{
 	public void Again() {               
 		clickAgain.click();
 		logger.info("user click again to hear speech again");
-		takeScreenShot();
+		
 	}
 	
 	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView")
@@ -52,7 +55,7 @@ public class TextToSpeechScreen extends BaseClass{
 	public void TextToSpeechPage() {               
 		String title = TextTospeechPageTitle.getText();
 		Assert.assertEquals(title, "App/Text-To-Speech");  
-		takeScreenShot();
+		
 	}
 	
 	

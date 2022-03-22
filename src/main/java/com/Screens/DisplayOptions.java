@@ -14,6 +14,7 @@ import junit.framework.Assert;
 
 public class DisplayOptions extends BaseClass {
 	
+	//define logger information
 	static Logger logger= LogManager.getLogger(DisplayOptions.class);
 	
 	public DisplayOptions(AppiumDriver<MobileElement> driver) {
@@ -21,6 +22,7 @@ public class DisplayOptions extends BaseClass {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	//locators and screens for display options 
 	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/android.widget.TextView")
 	 public MobileElement HomePageTitle;
 	
@@ -45,7 +47,7 @@ public class DisplayOptions extends BaseClass {
 	public void ActionBar() {               
 		clickActionBar.click(); 
 		logger.info("user click in the action bar");
-		takeScreenShot();
+		
 	}
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@content-desc=\"Display Options\"]")
@@ -63,7 +65,7 @@ public class DisplayOptions extends BaseClass {
 	public void DisplayOptionTitle() {               
 		String title = displayOptionPageTitle.getText();
 		Assert.assertEquals(title, "App/Action Bar/Display Options");
-		takeScreenShot();
+		
 	}
 	
 	
