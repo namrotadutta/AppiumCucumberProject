@@ -41,7 +41,7 @@ public class hooks extends CommonBase {
 	@After
 	public void after(Scenario scenario) {
 		commonUtilities.stopAppium();
-		if(scenario.isFailed()) {
+		if(scenario.isFailed()==true) {
 			//take a screenshot
 			final byte[] takescreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 			//embed it in the report

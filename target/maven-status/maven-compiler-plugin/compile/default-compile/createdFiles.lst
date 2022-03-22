@@ -7,3 +7,4 @@ com\Screens\HideShowButton.class
 com\Utils\propertiesFile.class
 com\Screens\ContentScreen.class
 com\Base\BaseClass.class
+com\Screens\Visibility.class
